@@ -9,6 +9,8 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: write  # Add this line to grant write permissions
     steps:
       - name: Generate Snake SVG
         uses: Platane/snk@v3
